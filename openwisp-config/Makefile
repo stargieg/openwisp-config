@@ -7,7 +7,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=openwisp-config
 PKG_VERSION:=$(shell cat ../VERSION)
-PKG_RELEASE:=1
+PKG_RELEASE:=2
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)/$(PKG_SOURCE_SUBDIR)
 PKG_LICENSE:=GPL-3.0
 PKG_MAINTAINER:=Federico Capoano <f.capoano@openwisp.io>
@@ -19,7 +19,7 @@ define Package/openwisp-config
 	CATEGORY:=Administration
 	SECTION:=admin
 	SUBMENU:=openwisp
-	DEPENDS:=+curl +lua +libuci-lua +luafilesystem +luci-lib-nixio +ca-certificates
+	EXTRA_DEPENDS:=curl, lua, libuci-lua, luafilesystem, luci-lib-nixio, ca-certificates
 	PKGARCH:=all
 	URL:=http://openwisp.org
 endef
