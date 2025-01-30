@@ -19,7 +19,7 @@ define Package/openwisp-config
 	CATEGORY:=Administration
 	SECTION:=admin
 	SUBMENU:=openwisp
-	EXTRA_DEPENDS:=curl, lua, libuci-lua, luafilesystem, luci-lib-nixio, ca-certificates
+	EXTRA_DEPENDS:=curl, lua, libuci-lua, luafilesystem, luci-lib-nixio
 	PKGARCH:=all
 	URL:=http://openwisp.org
 endef
